@@ -33,14 +33,14 @@ const puntos = [
     [0.1945414925, 0.5345645575, 6.0]
 ];
 
-for ( let i=0; i<7; i++ ) {
+for ( let i=0; i<8; i++ ) {
     const filename = `resultados_${(0.00).toFixed(2)}_${puntos[i][2].toFixed(2)}_${puntos[i][0].toFixed(10)}_${puntos[i][1].toFixed(10)}.db.gif`;
     const imgPath = `./gifs/${filename}`;
 
     const res = document.createElement("div");
 
     const title = document.createElement("h3");
-    title.innerText = `(${puntos[i][0]}, ${puntos[i][1]})`;
+    title.innerText = `${i+1}. (${puntos[i][0]}, ${puntos[i][1]})`;
 
     // Crear un elemento de imagen
     const img = document.createElement("img");
