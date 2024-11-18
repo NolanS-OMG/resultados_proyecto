@@ -33,7 +33,7 @@ const puntos = [
     [0.1945414925, 0.5345645575, 6.0]
 ];
 
-for ( let i=0; i<13; i++ ) {
+for ( let i=0; i<puntos.length; i++ ) {
     const filename = `resultados_${(0.00).toFixed(2)}_${puntos[i][2].toFixed(2)}_${puntos[i][0].toFixed(10)}_${puntos[i][1].toFixed(10)}.db.gif`;
     const imgPath = `./gifs/${filename}`;
 
